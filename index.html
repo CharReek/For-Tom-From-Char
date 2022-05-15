@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>For Tom</title>
+</head>
+<body>
+    <div class="container">
+        <div id="myDIV" class="text">OMG! Guess What?!</div>
+        <button onclick="myFunction()">Click Me to find out!</button>
+    </div>
+
+
+    <script>
+
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.innerHTML === "OMG! Guess What?!") {
+                x.innerHTML = "You Suck";
+            } else if (x.innerHTML === "You Suck"){
+                x.innerHTML = "Dickhead";
+            } else if (x.innerHTML === "Dickhead"){
+                x.innerHTML = "<img src='assets/images/tom-callum.png'/>";
+            } else {
+                x.innerHTML = "OMG! Guess What?!";
+            }
+        }
+    
+    </script>
+</body>
+</html>
